@@ -1,0 +1,22 @@
+//객체 
+const sangik = {
+    //key (property), 속성  || value (행동 메서드)
+    name : {
+        first :'Hwang',
+        last : 'sangik',
+    },
+    age : 29,
+    gender : 'male',
+
+    introdcue: function (guest){
+        return 'hello ' + guest +' my name is sangik'
+    },
+
+    hobby: ['soccer']
+};
+
+console.log(sangik.name);
+console.log(sangik.name.first);
+console.log(sangik.age);
+console.log(sangik.name.first);
+console.log(sangik.introdcue('hwang'));

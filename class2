@@ -1,0 +1,52 @@
+//값 
+//primitive Value 
+var str = 'word'; 
+str.toUpperCase();
+console.log(str);
+
+undefined : typeof instance == "undefined";
+Boolean : typeof instance == "boolean";
+Number : typeof instance == "number";
+String : typeof instance == "string";
+BingInt : typeof instance == "bigint";
+Symbol: typeof instance == "symbol";
+
+const un = undefined;
+const nu = null;
+const bol = false;
+const num = 0;
+const str = '문자열';
+
+console.log(typeof un); //undifined
+console.log(typeof nu); //object
+console.log(typeof bol); //boolean 
+console.log(typeof num); //number
+console.log(typeof str); //String  
+
+//원시 값이 아닌 객체 타입 
+const obj = {
+    name: 'hwang'
+}
+
+const arr = ['hwang']
+
+function func(){
+    return 'hwang'
+}
+
+console.log (typeof obj);
+console.log (typeof arr);
+console.log(typeof func);
+
+
+/**
+ * 동등 연산자를 사용할때 
+ * 엄격한 비교 -> ===
+ * 느슨한 비교 -> ==
+ */
+num = '0';
+if (num === 0){
+    console.log ('ok');
+} else{
+    console.log('wrong');
+}
